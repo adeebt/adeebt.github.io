@@ -1,0 +1,402 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portfolio</title>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                .about-section {
+                    text-align: center;
+                    padding: 50px 0;
+                }
+        
+                .about-section img {
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 5px solid #ddd;
+                }
+        
+                .about-section p {
+                    max-width: 600px;
+                    margin: 20px auto;
+                    font-size: 1.1em;
+                }
+        
+                .projects-section {
+                    text-align: center;
+                    padding: 50px 0;
+                }
+        
+                .projects-section .card {
+                    margin-bottom: 30px;
+                }
+                .skills-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fixed-size {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f8f9fa; /* Optional: Adds a background color to the container */
+}
+
+.skill-card {
+    max-width: 220px; /* Adjusted max width */
+    margin: 0 auto;   /* Center the card */
+}
+
+.card-body {
+    text-align: center; /* Center the text content */
+}
+
+.skills-section .card {
+    margin-bottom: 30px;
+}
+
+.skills-section .card-body {
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+    word-spacing: -1.5px; /* Adjust this value as needed */
+}
+
+
+    .justify-text {
+        text-align: justify;
+    }
+
+
+.contact-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #333;
+    color: white;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: #ff69b4; /* Pink background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+[data-toggle="tooltip"] {
+    position: relative;
+}
+
+[data-toggle="tooltip"]::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+[data-toggle="tooltip"]:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.sticky-top {
+    z-index: 1030;
+}
+
+            </style>
+        </head>
+        
+        <body>
+            <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About</h2>
+        <img src="C:\Users\adeeb\Pictures\ad2.png" alt="Profile Image">
+        <p>Passionate Data Analyst with 1 year of experience. M.Tech graduate in Artificial Intelligence, with a robust foundation in advanced analytics, machine learning, and data management.</p>
+        <p>Seeking new opportunities to apply my analytical expertise and AI knowledge to tackle complex data challenges and support organizational growth in the data analytics field.</p>
+        <p>Area of Expertise: Data Analytics | Data Science | Artificial intelligence | Business Analytics | Machine Learning | Python</p>
+    </section>
+
+
+ <!-- Projects Section -->
+ <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="row">
+        <!-- Project 1 Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="C:\Users\adeeb\Downloads\GNN.png" class="card-img-top fixed-size" alt="Project 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Enhancing Movie Recommendations with Simplified Graph Neural Networks</h5>
+                    <p class="card-title justify-text">Explore how Graph Neural Networks (GNNs) enhance movie recommendation systems, simplifying complex techniques to improve accuracy and effectiveness in a personalized digital world</p>
+                    <a href="https://medium.com/@adeebt.mec/enhancing-movie-recommendations-with-simplified-graph-neural-networks-5eb9aee92fba" class="btn btn-primary" target="_blank">Blog Post</a>
+                    <a href="#" class="btn btn-secondary">Source Code</a>
+                </div>
+            </div>
+        </div>
+       
+        <!-- Project 2 Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="C:\Users\adeeb\Downloads\ipl.png" class="card-img-top fixed-size" alt="Project 3 Image">
+                <div class="card-body">
+                    <h5 class="card-title justify-text">Analyse historical IPL data and provide insights on IPL 2024</h5>
+                    <p class="card-title justify-text">Insights into IPL player and team performance over the past three years.</p>
+                    <a href="https://app.powerbi.com/groups/me/reports/44717647-f8a8-44eb-a2b4-e0efca6b10c8/ReportSection8e71b85e090628030086?experience=power-bi" class="btn btn-primary" target="_blank">Dashboard</a>
+                   <!-- <a href="#" class="btn btn-secondary">Source Code</a> -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Project 3 Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="C:\Users\adeeb\Downloads\supply.png" class="card-img-top fixed-size" alt="Project 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title justify-text">Generate Insights to Solve a Supply Chain Issue in the FMCG domain</h5>
+                    <p class="card-title justify-text">Comprehensive tracking system to monitor and enhance 'On-time delivery (OT) %', 'In-full delivery (IF) %', and 'OnTime in full (OTIF) %', ensuring better customer service and supporting the company's expansion plans.</p>
+                    <a href="https://app.powerbi.com/groups/me/reports/d51627f6-4aba-4c9d-a27d-b1689b17af7c/ReportSection62390614a6055e263a03?experience=power-bi&bookmarkGuid=Bookmark491c012b93c06a95426a
+                    " class="btn btn-primary" target="_blank">Dashboard</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="C:\Users\adeeb\Pictures\haaland.jpg" class="card-img-top fixed-size" alt="Project 4 Image">
+                <div class="card-body">
+                    <h5 class="card-title justify-text">Analyzing Home and Away Performance of Forwards in EPL 2023/24</h5>
+                    <p class="card-title justify-text">Dive into the 2023/24 EPL season’s top forwards, analyzing how these strikers excel at home and away, with key statistics.</p>
+                    <a href="https://medium.com/@adeebt.mec/analyzing-home-and-away-performance-of-forwards-in-epl-2023-24-021223a09fc4" class="btn btn-primary" target="_blank">Blog Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+
+
+                <!-- Skills Section -->
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+        <!-- Skill 1 Card -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:\Users\adeeb\Downloads\python-logo-2.png" class="card-img-top fixed-size" alt="Skill 1 Icon">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                   <!--  <a href="#" class="btn btn-primary">Link to course or bootcamp</a> -->
+                </div>
+            </div>
+        </div>
+        <!-- Skill 2 Card -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:\Users\adeeb\Downloads\2-21042_power-bi-hd-png-download (1).png" class="card-img-top fixed-size" alt="Skill 2 Icon">
+                <div class="card-body">
+                    <h5 class="card-title">PowerBI</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Skill 3 Card -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:\Users\adeeb\Downloads\sql-database-generic-icon-1521x2048-d0vdpxpg.png" class="card-img-top fixed-size" alt="Skill 3 Icon">
+                <div class="card-body">
+                    <h5 class="card-title">SQL</h5>
+                </div>
+            </div>
+        </div>
+        <!-- Skill 4 Card -->
+        <div class="col-md-3">
+            <div class="card skill-card">
+                <img src="C:\Users\adeeb\Downloads\Microsoft_Office_Excel_(2019–present).svg.png" class="card-img-top fixed-size" alt="Skill 4 Icon">
+                <div class="card-body">
+                    <h5 class="card-title">Excel</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <img src="C:\Users\adeeb\Downloads\email-icon-png-email-icon-image-122-2400.png" alt="Email Icon" class="contact-icon">
+            <a href="mailto:your-email@example.com">adeebt.mec@gmail.com</a>
+        </div>
+        <div class="contact-item">
+            <img src="C:\Users\adeeb\Downloads\phone_PNG48991.png" alt="Phone Icon" class="contact-icon">
+            <a href="tel:+1234567890">+91 9747558410</a>
+        </div>
+        <div class="contact-item">
+            <img src="C:\Users\adeeb\Downloads\673521.png" alt="Linkedin Icon" class="contact-icon">
+            <a href="tel:+1234567890">https://www.linkedin.com/in/adeebt/</a>
+        </div>
+    </div>
+    <!-- <div class="social-icons">
+        <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" data-toggle="tooltip" title="LinkedIn">
+            <img src="icons/linkedin.png" alt="LinkedIn Icon">
+        </a>
+        <a href="https://twitter.com/yourprofile" class="social-icon" data-toggle="tooltip" title="Twitter">
+            <img src="icons/twitter.png" alt="Twitter Icon">
+        </a>
+        <a href="https://github.com/yourprofile" class="social-icon" data-toggle="tooltip" title="GitHub">
+            <img src="icons/github.png" alt="GitHub Icon">
+        </a>
+        <a href="https://medium.com/@yourprofile" class="social-icon" data-toggle="tooltip" title="Medium">
+            <img src="icons/medium.png" alt="Medium Icon">
+        </a>
+        <a href="https://www.youtube.com/channel/yourchannel" class="social-icon" data-toggle="tooltip" title="YouTube">
+            <img src="icons/youtube.png" alt="YouTube Icon">
+        </a>
+    </div> -->
+</section>
+
+
+
+
+            </div>
+        
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+        
+        </html>
+        
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
