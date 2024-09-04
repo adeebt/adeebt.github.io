@@ -76,6 +76,34 @@
 
 
 
+/* For Project Images */
+.project-img {
+    width: 100%; /* Ensure project images take up the full card width */
+    height: auto; /* Let the height adjust automatically */
+}
+
+/* For Skill Images */
+.skill-img {
+    width: 80px;  /* Set the skill image width */
+    height: 80px; /* Set the skill image height */
+    object-fit: contain; /* Contain the image within the dimensions */
+    margin: 0 auto; /* Center the image */
+}
+
+.skill-card {
+    width: 80px;  /* Match the skill card size with the image size */
+    height: 80px;
+    margin: 10px; /* Add some space between the cards */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove the card border */
+}
+
+
+
+                    
+
 
 
 
@@ -283,13 +311,13 @@ html {
 
 
  <!-- Projects Section -->
- <section id="projects" class="projects-section">
+<section id="projects" class="projects-section">
     <h2>Projects</h2>
     <div class="row">
         <!-- Project 1 Card -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="https://adeebt.github.io/images/GNN.png" class="card-img-top fixed-size" alt="Project 1 Image">
+                <img src="https://adeebt.github.io/images/GNN.png" class="card-img-top project-img" alt="Project 1 Image">
                 <div class="card-body">
                     <h5 class="card-title">Enhancing Movie Recommendations with Simplified Graph Neural Networks</h5>
                     <p class="card-title justify-text">Explore how Graph Neural Networks (GNNs) enhance movie recommendation systems, simplifying complex techniques to improve accuracy and effectiveness in a personalized digital world</p>
@@ -298,39 +326,32 @@ html {
                 </div>
             </div>
         </div>
-       
         <!-- Project 2 Card -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="https://adeebt.github.io/images/ipl.png" class="card-img-top fixed-size" alt="Project 3 Image">
+                <img src="https://adeebt.github.io/images/ipl.png" class="card-img-top project-img" alt="Project 3 Image">
                 <div class="card-body">
                     <h5 class="card-title justify-text">Analyse historical IPL data and provide insights on IPL 2024</h5>
                     <p class="card-title justify-text">Insights into IPL player and team performance over the past three years.</p>
                     <a href="https://app.powerbi.com/groups/me/reports/44717647-f8a8-44eb-a2b4-e0efca6b10c8/ReportSection8e71b85e090628030086?experience=power-bi" class="btn btn-primary" target="_blank">Dashboard</a>
-                   <!-- <a href="#" class="btn btn-secondary">Source Code</a> -->
                 </div>
             </div>
         </div>
-
-
-
         <!-- Project 3 Card -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="https://adeebt.github.io/images/supply.png" class="card-img-top fixed-size" alt="Project 2 Image">
+                <img src="https://adeebt.github.io/images/supply.png" class="card-img-top project-img" alt="Project 2 Image">
                 <div class="card-body">
                     <h5 class="card-title justify-text">Generate Insights to Solve a Supply Chain Issue in the FMCG domain</h5>
                     <p class="card-title justify-text">Comprehensive tracking system to monitor and enhance 'On-time delivery (OT) %', 'In-full delivery (IF) %', and 'OnTime in full (OTIF) %', ensuring better customer service and supporting the company's expansion plans.</p>
-                    <a href="https://app.powerbi.com/groups/me/reports/d51627f6-4aba-4c9d-a27d-b1689b17af7c/ReportSection62390614a6055e263a03?experience=power-bi&bookmarkGuid=Bookmark491c012b93c06a95426a
-                    " class="btn btn-primary" target="_blank">Dashboard</a>
+                    <a href="https://app.powerbi.com/groups/me/reports/d51627f6-4aba-4c9d-a27d-b1689b17af7c/ReportSection62390614a6055e263a03?experience=power-bi&bookmarkGuid=Bookmark491c012b93c06a95426a" class="btn btn-primary" target="_blank">Dashboard</a>
                 </div>
             </div>
         </div>
-
         <!-- Project 4 Card -->
         <div class="col-md-4 mb-4">
             <div class="card h-100">
-                <img src="https://adeebt.github.io/images/haaland.jpg" class="card-img-top fixed-size" alt="Project 4 Image">
+                <img src="https://adeebt.github.io/images/haaland.jpg" class="card-img-top project-img" alt="Project 4 Image">
                 <div class="card-body">
                     <h5 class="card-title justify-text">Analyzing Home and Away Performance of Forwards in EPL 2023/24</h5>
                     <p class="card-title justify-text">Dive into the 2023/24 EPL season’s top forwards, analyzing how these strikers excel at home and away, with key statistics.</p>
@@ -340,7 +361,6 @@ html {
         </div>
     </div>
 </section>
-</div>
 
 <!-- Skills Section -->
 <section id="skills" class="skills-section">
@@ -349,37 +369,25 @@ html {
         <!-- Skill 1 Card -->
         <div class="col-md-2">
             <div class="card skill-card">
-                <img src="https://adeebt.github.io/images/python-logo-2.png" class="card-img-top fixed-size" alt="Skill 1 Icon">
-                <div class="card-body">
-                    <h5 class="card-title">Python</h5>
-                </div>
+                <img src="https://adeebt.github.io/images/python-logo-2.png" class="card-img-top skill-img" alt="Skill 1 Icon">
             </div>
         </div>
         <!-- Skill 2 Card -->
         <div class="col-md-2">
             <div class="card skill-card">
-                <img src="https://adeebt.github.io/images/2-21042_power-bi-hd-png-download.png" class="card-img-top fixed-size" alt="Skill 2 Icon">
-                <div class="card-body">
-                    <h5 class="card-title">PowerBI</h5>
-                </div>
+                <img src="https://adeebt.github.io/images/2-21042_power-bi-hd-png-download.png" class="card-img-top skill-img" alt="Skill 2 Icon">
             </div>
         </div>
         <!-- Skill 3 Card -->
         <div class="col-md-2">
             <div class="card skill-card">
-                <img src="https://adeebt.github.io/images/sql-database-generic-icon-1521x2048-d0vdpxpg.png" class="card-img-top fixed-size" alt="Skill 3 Icon">
-                <div class="card-body">
-                    <h5 class="card-title">SQL</h5>
-                </div>
+                <img src="https://adeebt.github.io/images/sql-database-generic-icon-1521x2048-d0vdpxpg.png" class="card-img-top skill-img" alt="Skill 3 Icon">
             </div>
         </div>
         <!-- Skill 4 Card -->
         <div class="col-md-2">
             <div class="card skill-card">
-                <img src="https://adeebt.github.io/images/Microsoft_Office_Excel_(2019–present).svg.png" class="card-img-top fixed-size" alt="Skill 4 Icon">
-                <div class="card-body">
-                    <h5 class="card-title">Excel</h5>
-                </div>
+                <img src="https://adeebt.github.io/images/Microsoft_Office_Excel_(2019–present).svg.png" class="card-img-top skill-img" alt="Skill 4 Icon">
             </div>
         </div>
     </div>
