@@ -88,6 +88,28 @@
     background-color: #f8f9fa; /* Optional: Adds a background color to the container */
 }
 
+ .fixed-size {
+    width: 80px; /* Set image width */
+    height: 80px; /* Set image height */
+    object-fit: contain;
+}
+
+.skill-card {
+    width: 80px;  /* Same width as image */
+    height: 80px; /* Same height as image */
+    margin: 0 auto; /* Center the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove border for a clean look */
+}
+
+.skill-card .card-body {
+    display: none; /* Hide the card body */
+}
+                   
+
 .skill-card {
     max-width: 220px; /* Adjusted max width */
     margin: 0 auto;   /* Center the card */
@@ -319,9 +341,6 @@ html {
     </div>
 </section>
 </div>
-
-
-
 
 <!-- Skills Section -->
 <section id="skills" class="skills-section">
